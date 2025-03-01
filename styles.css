@@ -1,0 +1,555 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #0a0a0a;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background: #333;
+    padding: 1rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .logo {
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    gap: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+/* Gallery */
+.gallery {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery h3 {
+    margin-bottom: 1.5rem;
+    
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-left: 1cm;
+}
+
+.gallery-grid img {
+    width: 95%;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* About Section */
+.about, .contact {
+    padding: 2rem;
+    text-align: center;
+    font-size: 15;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* About Page */
+.about-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-page h2 {
+    margin-bottom: 1.5rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.about-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h3 {
+    margin-bottom: 1rem;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.services li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials h3 {
+    margin-bottom: 1rem;
+}
+
+.testimonials blockquote {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-style: italic;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact Page */
+.contact-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-page h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-page p {
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Form */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container label {
+    margin-top: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form-container button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form-container button:hover {
+    background-color: #555;
+}
+
+/* Contact Details */
+.contact-details {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Services Page */
+.services-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-page h2 {
+    margin-bottom: 1.5rem;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Page */
+.testimonials-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials-page h2 {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-style: italic;
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.testimonial-item cite {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 25%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Project Details Section */
+.project-details {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-details p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Gallery Grid */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom-in Effect on Hover */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Back Link Styling */
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Social Media Links */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ddd;
+}
+
+/* Keyframes for New Animations */
+@keyframes rotateIn {
+    from { transform: rotate(-180deg); opacity: 0; }
+    to { transform: rotate(0deg); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes flipIn {
+    from { transform: rotateY(90deg); opacity: 0; }
+    to { transform: rotateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeScale {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Logo Styling */
+.logo {
+    display: inline-block;
+    max-width: 150px; /* Adjust the width as needed */
+    height: auto;     /* Maintain aspect ratio */
+}
+
+.logo img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio of the image */
+}
+/* Applying the New Animations */
+
+/* Logo rotates in */
+.logo {
+    animation: rotateIn 1s ease-out forwards;
+}
+
+/* Call-to-action button pulses to draw attention */
+.call-to-action {
+    animation: pulse 1.5s ease infinite;
+}
+
+/* Card elements flip in on page load */
+.card {
+    animation: flipIn 0.8s ease forwards;
+}
+
+/* Header or section titles slide down smoothly */
+.section-title {
+    animation: slideDown 1s ease-out forwards;
+}
+
+/* Portfolio items fade in with a subtle scale */
+.portfolio-item {
+    animation: fadeScale 1.2s ease forwards;
+}
+
+
+/* Project Gallery */
+.project-gallery {
+    text-align: center;
+    padding: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Videography Section */
+.videography-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.videography-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.videography-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item video:hover {
+    transform: scale(1.05);
+}
