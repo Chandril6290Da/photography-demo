@@ -46,7 +46,6 @@ nav .logo {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
     text-align: center;
-    gap: 1;
 }
 
 .hero h2 {
@@ -61,7 +60,6 @@ nav .logo {
 
 .gallery h3 {
     margin-bottom: 1.5rem;
-    
 }
 
 .gallery-grid {
@@ -80,24 +78,6 @@ nav .logo {
 .about, .contact {
     padding: 2rem;
     text-align: center;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-
-/* About Section */
-.about, .contact {
-    padding: 2rem;
-    text-align: center;
-    font-size: 15;
-    font-style: italic;
 }
 
 /* Footer */
@@ -344,7 +324,6 @@ footer {
     margin-top: 10px;
 }
 
-
 /* Project Details Section */
 .project-details {
     padding: 2rem;
@@ -463,6 +442,7 @@ footer {
     width: 100%;
     height: auto; /* Maintain aspect ratio of the image */
 }
+
 /* Applying the New Animations */
 
 /* Logo rotates in */
@@ -490,7 +470,6 @@ footer {
     animation: fadeScale 1.2s ease forwards;
 }
 
-
 /* Project Gallery */
 .project-gallery {
     text-align: center;
@@ -514,8 +493,6 @@ footer {
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
-
-
 
 /* Videography Section */
 .videography-section {
@@ -552,4 +529,79 @@ footer {
 
 .video-item video:hover {
     transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-item img {
+        width: 80%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        width: 150px;
+    }
+
+    .contact-form-container {
+        padding: 0.5rem;
+    }
+
+    .contact-form-container button {
+        font-size: 0.9rem;
+    }
+
+    .services-page h2,
+    .testimonials-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-item,
+    .testimonial-item {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+    }
+
+    .contact-form-container input,
+    .contact-form-container textarea {
+        padding: 0.4rem;
+    }
+
+    .contact-form-container button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
 }
