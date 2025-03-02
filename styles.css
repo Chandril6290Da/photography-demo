@@ -534,74 +534,67 @@ footer {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .hero h2 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust font size for mobile */
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
     }
 
     .portfolio-item img {
-        width: 80%;
+        width: 80%; /* Adjust image width for mobile */
     }
 
     .about-content {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
     }
 
     .about-content img {
-        width: 150px;
+        width: 150px; /* Adjust image size for mobile */
     }
 
     .contact-form-container {
-        padding: 0.5rem;
+        padding: 0.5rem; /* Reduce padding for mobile */
     }
 
     .contact-form-container button {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Adjust button font size for mobile */
     }
 
     .services-page h2,
     .testimonials-page h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjust heading size for mobile */
     }
 
     .service-item,
     .testimonial-item {
-        padding: 1rem;
+        padding: 1rem; /* Adjust padding for mobile */
     }
 }
 
 @media (max-width: 480px) {
     nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 0.5rem; /* Reduce gap between items */
     }
 
     .hero {
-        height: 50vh;
+        height: 50vh; /* Reduce hero height for mobile */
     }
 
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller font for mobile */
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on mobile */
     }
 
     .portfolio-item img {
-        width: 100%;
+        width: 100%; /* Full width for mobile */
     }
 
     .contact-form-container input,
     .contact-form-container textarea {
-        padding: 0.4rem;
-    }
-
-    .contact-form-container button {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-    }
-}
+        padding:
